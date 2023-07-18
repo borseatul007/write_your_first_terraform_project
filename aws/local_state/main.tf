@@ -40,7 +40,7 @@ resource "aws_subnet" "private_subnet" {
 }
 
 resource "aws_instance" "public_instance" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-0f5ee92e2d63afc18"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.public_subnet.id
 
@@ -50,7 +50,7 @@ resource "aws_instance" "public_instance" {
 }
 
 resource "aws_instance" "private_instance" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-0f5ee92e2d63afc18"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.private_subnet.id
 
